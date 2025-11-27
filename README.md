@@ -1,4 +1,4 @@
-🦷 Sistema de Gestión de Clínica Odontológica
+🦷 Sistema de Gestión de Clínica Odontológica: JAVA & SPRINGBOOT & REACTJS.
 
 Este proyecto es una aplicación web Full Stack diseñada para administrar la información de una clínica odontológica. Permite la gestión integral de pacientes, odontólogos y la asignación de turnos médicos, todo protegido bajo un sistema de autenticación y autorización basado en roles (Admin y User).
 
@@ -21,6 +21,7 @@ El proyecto sigue una arquitectura de capas (MVC) en el backend y una arquitectu
 • Maven: Gestión de dependencias.
 
 • Swagger / OpenAPI: Documentación de la API.
+
 -----------------------------------------------------------------------------------------------------
 
 💻 Frontend (SPA)
@@ -34,6 +35,7 @@ El proyecto sigue una arquitectura de capas (MVC) en el backend y una arquitectu
 • Axios: Cliente HTTP para comunicación con el backend (configurado con interceptores para JWT).
 
 • React Router DOM: Manejo de navegación y rutas protegidas.
+
 -----------------------------------------------------------------------------------------------------
 
 ✨ Funcionalidades Principales
@@ -51,19 +53,19 @@ ADMIN: Acceso total al sistema. Ademas de gestionar sus turnos, puede administra
 
 🏥 Gestión de la Clínica (CRUD)
 
-Solo accesible para usuarios con rol ADMIN:
-
 Odontólogos: Alta, baja, modificación y listado de profesionales (incluye Matrícula, Nombre y Apellido).
 
 Pacientes: Gestión completa de pacientes, incluyendo datos personales y domicilio (Entidad Address relacionada).
 
 Turnos (Appointments):
 
-Asignación de turnos relacionando un Paciente existente con un Odontólogo existente en una fecha específica.
+-Asignación de turnos relacionando un Paciente existente con un Odontólogo existente en una fecha específica.
 
-Validación de existencia de entidades antes de la creación del turno.
+-Validación de existencia de entidades antes de la creación del turno. 
 
-Listado y eliminación de turnos.
+- Un turno tiene la duracion de 30 minutos. Es decir, no se puede asignar otro turno en ese lapso de tiempo al mismo odontologo.
+
+-Listado, actualizacion y eliminación de turnos.
 
 📊 Dashboard
 
