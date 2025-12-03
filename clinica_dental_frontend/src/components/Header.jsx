@@ -10,7 +10,7 @@ export default function Header() {
   const [admin, setAdmin] = useState(isAdmin())
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  // 🔥 Escuchar cambios en autenticación
+  //  Escuchar cambios en autenticación
   useEffect(() => {
     function updateAuthState() {
       setAuth(getAuth())
@@ -66,7 +66,7 @@ export default function Header() {
           </nav>
         )}
         
-        {/* Desktop Auth Buttons */}
+       
         <div className="hidden md:flex gap-3">
           {!auth ? (
             <>
@@ -84,7 +84,7 @@ export default function Header() {
           )}
         </div>
 
-        {/* Mobile Menu Toggle Button */}
+       
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="md:hidden p-2 text-cyan-300 hover:bg-blue-800/50 rounded-lg transition"
@@ -93,7 +93,7 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-blue-700/50 bg-blue-800/50 backdrop-blur-sm">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">

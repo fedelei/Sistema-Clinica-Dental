@@ -229,7 +229,7 @@ export default function Patients(){
         </form>
       </div>
 
-      {/* Lista de Pacientes */}
+      
       <div>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
           <div className="flex items-center gap-3">
@@ -280,7 +280,7 @@ export default function Patients(){
                     </div>
                   </div>
                   
-                  {/* Dirección */}
+                 
                   <div className="space-y-3">
                     {p.address && (
                       <>
@@ -295,7 +295,7 @@ export default function Patients(){
                   </div>
                 </div>
                 
-                {/* Botones de Acción */}
+                
                 <div className="flex gap-2 mt-6 pt-6 border-t border-slate-700/50">
                   <button 
                     onClick={() => edit(p)} 
